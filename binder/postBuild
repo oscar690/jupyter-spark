@@ -18,7 +18,8 @@ SCALA_VERSION=2.12.11 ALMOND_VERSION=0.10.0
   --copy-launcher true
 rm -f almond
 
-jupyter contrib nbextension install --user
+#jupyter contrib nbextension install --user
+pip install jupyter_contrib_nbextensions
 jupyter nbextension enable exercise2/main
 # Install almond for Scala 2.11
 # SCALA_VERSION=2.11.12 ALMOND_VERSION=0.4.0
